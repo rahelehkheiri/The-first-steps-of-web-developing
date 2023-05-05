@@ -1,0 +1,108 @@
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border: 1px solid white;
+  box-shadow: 0 5px 5px 0 rgb(199, 199, 199);
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+#navbar #nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+}
+#navbar #ul-dropdown {
+  margin-right: 20px;
+}
+#navbar #ul-dropdown li {
+  direction: rtl;
+  text-align: right;
+}
+#navbar #ul-dropdown a {
+  color: rgb(88, 88, 88);
+}
+#navbar #ul-btn {
+  margin-right: 20rem;
+}
+#navbar #ul-btn a {
+  color: rgb(88, 88, 88);
+}
+
+main #airplane {
+  margin-top: 15px;
+}
+main .main-paper {
+  direction: rtl;
+  text-align: justify;
+  padding: 60px;
+}
+main .main-paper #travel {
+  float: left;
+  margin: 0 30px 0 0;
+}
+main .main-paper p {
+  line-height: 30px;
+}
+main .main-paper p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+main .main-paper h1 {
+  font-size: larger;
+  font-weight: bolder;
+}
+main .main-paper h2 {
+  font-size: large;
+  font-weight: bold;
+}
+
+footer #footer1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 60px;
+}
+footer #footer1 .footer1 {
+  direction: rtl;
+}
+footer #footer1 .footer1 img {
+  float: right;
+  margin-left: 20px;
+}
+footer #footer1 .footer1 p {
+  color: rgb(100, 100, 100);
+  line-height: 18px;
+}
+footer #footer2 {
+  margin: 30px 80px;
+}
+footer #footer3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 75px;
+}
+footer #footer3 div a {
+  text-decoration: none;
+  color: black;
+}
+footer #footer4 {
+  margin-left: 85px;
+}
+footer #footer4 div {
+  margin: 15px 20px;
+}
+footer #footer4 div a svg {
+  width: 24px;
+  height: 24px;
+  color: rgb(105, 104, 104);
+}
+
+/*# sourceMappingURL=style.css.map */
