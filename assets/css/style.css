@@ -1,17 +1,9 @@
 #navbar {
-  display: flex;
-  align-items: center;
-  justify-content: end;
   border: 1px solid white;
   box-shadow: 0 5px 5px 0 rgb(199, 199, 199);
   background-color: white;
-  position: sticky;
-  top: 0;
 }
 #navbar #nav-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
   border: none;
   color: black;
@@ -64,9 +56,6 @@ main .main-paper h2 {
 }
 
 footer #footer1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin: 30px 60px;
 }
 footer #footer1 .footer1 {
@@ -84,9 +73,6 @@ footer #footer2 {
   margin: 30px 80px;
 }
 footer #footer3 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   margin-left: 75px;
 }
 footer #footer3 div a {

@@ -1,17 +1,9 @@
 #navbar{
-    display: flex;
-    align-items: center;
-    justify-content: end;
     border: 1px solid white;
     box-shadow: 0 5px 5px 0 rgb(199, 199, 199);
     background-color: white;
-    position: sticky;
-    top: 0;
            
     #nav-icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background-color: white;
         border: none;
         color: black;
@@ -70,9 +62,6 @@ main{
 }
 footer{
     #footer1{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         margin: 30px 60px;
         .footer1{
             direction: rtl;
@@ -90,9 +79,6 @@ footer{
         margin: 30px 80px;
     }
     #footer3{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         margin-left: 75px;
         div{
             a{
