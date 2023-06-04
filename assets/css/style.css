@@ -27,11 +27,84 @@
   color: rgb(88, 88, 88);
 }
 
+main #request-box {
+  width: 72rem;
+}
+main #request-box #req-firstrow {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+main #request-box #req-firstrow .col {
+  color: rgba(87, 86, 86, 0.795);
+}
+main #request-box #req-firstrow .col h1 svg {
+  height: 25px;
+  width: 25px;
+}
+main #request-box #req-firstrow .col span {
+  font-weight: bold;
+}
+main #request-box #req-secondrow {
+  direction: rtl;
+}
+main #request-box #req-secondrow #just-select {
+  width: fit-content;
+  margin: 10px 10px 25px 5px;
+}
+main #request-box #req-secondrow #just-select .select-value {
+  padding: 10px 5px;
+}
+main #request-box #req-secondrow #ticket-select #city-select {
+  width: 25rem;
+  margin-right: 3px;
+  height: 2.5rem;
+}
+main #request-box #req-secondrow #ticket-select #city-select input {
+  width: 11rem;
+  height: 2.5rem;
+}
+main #request-box #req-secondrow #ticket-select #date-select {
+  width: 20rem;
+}
+main #request-box #req-secondrow #ticket-select #date-select input {
+  width: 10rem;
+  height: 2.5rem;
+}
+main #request-box #req-secondrow #ticket-select #date-select #return-date {
+  background-color: rgb(226, 226, 226);
+}
+main #request-box #req-secondrow #ticket-select #passengers #pass-select {
+  width: 10rem;
+  height: 2.5rem;
+}
+main #request-box #req-secondrow #ticket-select #passengers #pass-select select {
+  background-image: none;
+  width: fit-content;
+  height: 2.5rem;
+  padding-right: 3px;
+  font-weight: bold;
+}
+main #request-box #req-secondrow #ticket-select #passengers #pass-select select option {
+  width: fit-content;
+}
+main #request-box #req-secondrow #ticket-select #passengers #pass-select select option span {
+  color: #aaaaaa;
+}
+main #request-box #req-secondrow #ticket-select #pass-btn {
+  margin-right: 10px;
+  width: 11rem;
+}
+main #request-box #req-secondrow #ticket-select #pass-btn button {
+  width: 10rem;
+  height: 2.5rem;
+}
 main #airplane {
   margin-top: 15px;
 }
 main #Questions {
-  margin: 1rem 3rem;
+  width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
   direction: rtl;
 }
 main #Questions #qtitr {
@@ -39,13 +112,15 @@ main #Questions #qtitr {
   font-weight: bold;
 }
 main #Questions button {
-  list-style: none;
   padding-bottom: 5px;
   padding-top: 20px;
 }
 main #Questions button p {
   font-size: 1rem;
   font-weight: bolder;
+  text-align: right;
+  width: 47rem;
+  margin-left: 20rem;
 }
 main #Questions button p svg {
   width: 30px;
