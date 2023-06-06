@@ -26,6 +26,10 @@
 #navbar #ul-btn a {
   color: rgb(88, 88, 88);
 }
+#navbar #ul-btn li #login-btn {
+  border: none;
+  background: none;
+}
 
 main #request-box {
   width: 72rem;

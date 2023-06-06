@@ -1,107 +1,137 @@
 $box-width: 72rem;
 $light-text-color: #aaaaaa;
 
-#navbar{
+#navbar {
     border: 1px solid white;
     box-shadow: 0 5px 5px 0 rgb(199, 199, 199);
     background-color: white;
-           
-    #nav-icon{
+
+    #nav-icon {
         background-color: white;
         border: none;
         color: black;
         text-align: center;
         line-height: 20px;
     }
-    #ul-dropdown{
+
+    #ul-dropdown {
         margin-right: 20px;
 
-        li{
+        li {
             direction: rtl;
             text-align: right;
         }
-        a{
+
+        a {
             color: rgb(88, 88, 88);
         }
     }
-    #ul-btn{
+
+    #ul-btn {
         margin-right: 20rem;
-        a{
+
+        a {
             color: rgb(88, 88, 88);
+        }
+        li{
+            #login-btn {
+                border: none;
+                background: none;
+            }
         }
     }
 }
-main{
-    #request-box{
+
+
+main {
+    #request-box {
         width: $box-width;
-        #req-firstrow{
+
+        #req-firstrow {
             margin-left: 3rem;
             margin-right: 3rem;
-            .col{
+
+            .col {
                 color: rgba(87, 86, 86, 0.795);
-                h1{
-                    svg{
+
+                h1 {
+                    svg {
                         height: 25px;
                         width: 25px;
                     }
                 }
-                span{
+
+                span {
                     font-weight: bold;
                 }
             }
         }
-        #req-secondrow{
+
+        #req-secondrow {
             direction: rtl;
-            #just-select{
+
+            #just-select {
                 width: fit-content;
                 margin: 10px 10px 25px 5px;
-                .select-value{
+
+                .select-value {
                     padding: 10px 5px;
                 }
             }
-            #ticket-select{
-                #city-select{
+
+            #ticket-select {
+                #city-select {
                     width: 25rem;
                     margin-right: 3px;
                     height: 2.5rem;
-                    input{
-                        width: 11rem; 
+
+                    input {
+                        width: 11rem;
                         height: 2.5rem;
-                     }
+                    }
                 }
-                #date-select{
+
+                #date-select {
                     width: 20rem;
-                    input{
-                        width: 10rem; 
+
+                    input {
+                        width: 10rem;
                         height: 2.5rem;
-                     }
-                     #return-date{
+                    }
+
+                    #return-date {
                         background-color: rgb(226, 226, 226);
                     }
                 }
-                #passengers{
-                    #pass-select{
+
+                #passengers {
+                    #pass-select {
                         width: 10rem;
                         height: 2.5rem;
-                        select{
+
+                        select {
                             background-image: none;
                             width: fit-content;
                             height: 2.5rem;
                             padding-right: 3px;
                             font-weight: bold;
-                            option{
+
+                            option {
                                 width: fit-content;
-                                span{
+
+                                span {
                                     color: $light-text-color;
                                 }
                             }
                         }
                     }
                 }
-                #pass-btn{
+
+                #pass-btn {
                     margin-right: 10px;
                     width: 11rem;
-                    button{
+
+                    button {
                         width: 10rem;
                         height: 2.5rem;
                     }
@@ -109,28 +139,34 @@ main{
             }
         }
     }
-    #airplane{
+
+    #airplane {
         margin-top: 15px;
     }
-    #Questions{
+
+    #Questions {
         width: $box-width;
         margin-left: auto;
         margin-right: auto;
         direction: rtl;
-        #qtitr{
+
+        #qtitr {
             margin: 30px 0px 10px 30px;
             font-weight: bold;
         }
-        button{
+
+        button {
             padding-bottom: 5px;
             padding-top: 20px;
-            p{
+
+            p {
                 font-size: 1rem;
                 font-weight: bolder;
                 text-align: right;
                 width: 47rem;
                 margin-left: 20rem;
-                svg{
+
+                svg {
                     width: 30px;
                     height: 30px;
                     color: rgb(205, 255, 255);
@@ -140,70 +176,86 @@ main{
                 }
             }
         }
-        .accordion-body{
+
+        .accordion-body {
             padding: 20px 4rem;
             font-size: 1rem;
         }
     }
-    .main-paper{
+
+    .main-paper {
         direction: rtl;
         text-align: justify;
         padding: 60px;
-        
-        #travel{
+
+        #travel {
             float: left;
             margin: 0 30px 0 0;
         }
-        p{
+
+        p {
             line-height: 30px;
-            a{
+
+            a {
                 text-decoration: none;
                 font-weight: bold;
             }
         }
-        h1{
+
+        h1 {
             font-size: larger;
             font-weight: bolder;
         }
-        h2{
+
+        h2 {
             font-size: large;
             font-weight: bold;
         }
     }
 }
-footer{
-    #footer1{
+
+footer {
+    #footer1 {
         margin: 30px 60px;
-        .footer1{
+
+        .footer1 {
             direction: rtl;
-            img{
+
+            img {
                 float: right;
                 margin-left: 20px;
             }
-            p{
+
+            p {
                 color: rgb(100, 100, 100);
                 line-height: 18px;
             }
         }
     }
-    #footer2{
+
+    #footer2 {
         margin: 30px 80px;
     }
-    #footer3{
+
+    #footer3 {
         margin-left: 75px;
-        div{
-            a{
+
+        div {
+            a {
                 text-decoration: none;
                 color: black;
             }
         }
     }
-    #footer4{
+
+    #footer4 {
         margin-left: 85px;
-        div{
+
+        div {
             margin: 15px 20px;
-            a{
-                svg{
+
+            a {
+                svg {
                     width: 24px;
                     height: 24px;
                     color: rgb(105, 104, 104);
@@ -212,4 +264,3 @@ footer{
         }
     }
 }
-
