@@ -31,6 +31,12 @@
   background: none;
 }
 
+main #airplane img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: inline-block;
+}
 main #request-box {
   width: 72rem;
 }
@@ -74,7 +80,7 @@ main #request-box #req-secondrow #ticket-select #date-select input {
   width: 10rem;
   height: 2.5rem;
 }
-main #request-box #req-secondrow #ticket-select #date-select #return-date {
+main #request-box #req-secondrow #ticket-select #date-select #back-date {
   background-color: rgb(226, 226, 226);
 }
 main #request-box #req-secondrow #ticket-select #passengers #pass-select {
@@ -101,9 +107,6 @@ main #request-box #req-secondrow #ticket-select #pass-btn {
 main #request-box #req-secondrow #ticket-select #pass-btn button {
   width: 10rem;
   height: 2.5rem;
-}
-main #airplane {
-  margin-top: 15px;
 }
 main #Questions {
   width: 72rem;
@@ -138,10 +141,39 @@ main #Questions .accordion-body {
   padding: 20px 4rem;
   font-size: 1rem;
 }
+main #other-services {
+  margin: 30px 6rem 3px 0px;
+  direction: rtl;
+}
+main #other-ser {
+  margin: 20px 5.5rem;
+}
+main #other-ser .o-ser {
+  width: 23rem;
+  border: 1px rgb(226, 226, 226) solid;
+  direction: rtl;
+  padding: 15px;
+}
+main #other-ser .o-ser .ser-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+main #other-ser .o-ser .ser-link img {
+  margin-left: 10px;
+}
+main #other-ser .o-ser .ser-link span {
+  display: inline-block;
+  width: 6rem;
+}
+main #other-ser .o-ser .ser-link svg {
+  margin-right: 10rem;
+  color: rgb(160, 160, 160);
+}
 main .main-paper {
   direction: rtl;
   text-align: justify;
-  padding: 60px;
+  margin: 60px 6rem 30px 6rem;
 }
 main .main-paper #travel {
   float: left;
@@ -152,14 +184,6 @@ main .main-paper p {
 }
 main .main-paper p a {
   text-decoration: none;
-  font-weight: bold;
-}
-main .main-paper h1 {
-  font-size: larger;
-  font-weight: bolder;
-}
-main .main-paper h2 {
-  font-size: large;
   font-weight: bold;
 }
 

@@ -44,6 +44,14 @@ $light-text-color: #aaaaaa;
 
 
 main {
+    #airplane {
+        img{
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
     #request-box {
         width: $box-width;
 
@@ -99,7 +107,7 @@ main {
                         height: 2.5rem;
                     }
 
-                    #return-date {
+                    #back-date {
                         background-color: rgb(226, 226, 226);
                     }
                 }
@@ -140,9 +148,6 @@ main {
         }
     }
 
-    #airplane {
-        margin-top: 15px;
-    }
 
     #Questions {
         width: $box-width;
@@ -182,11 +187,40 @@ main {
             font-size: 1rem;
         }
     }
+    #other-services{
+        margin: 30px 6rem 3px 0px;
+        direction: rtl;
+    }
+    #other-ser{
+        margin: 20px 5.5rem;
+        .o-ser{
+            width: 23rem;
+            border: 1px rgb(226, 226, 226) solid;
+            direction: rtl;
+            padding: 15px;
+            .ser-link{
+                text-decoration: none;
+                color: black;
+                width: 100%;
+                img{
+                    margin-left: 10px;
+                }
+                span{
+                    display: inline-block;
+                    width: 6rem;
+                }
+                svg{
+                    margin-right: 10rem;
+                    color: rgb(160, 160, 160);
+                }
+            }
+        }
+    }
 
     .main-paper {
         direction: rtl;
         text-align: justify;
-        padding: 60px;
+        margin: 60px 6rem 30px 6rem;
 
         #travel {
             float: left;
@@ -200,16 +234,6 @@ main {
                 text-decoration: none;
                 font-weight: bold;
             }
-        }
-
-        h1 {
-            font-size: larger;
-            font-weight: bolder;
-        }
-
-        h2 {
-            font-size: large;
-            font-weight: bold;
         }
     }
 }
