@@ -36,6 +36,7 @@ main #airplane img {
   height: auto;
   margin-top: 10px;
   display: inline-block;
+  position: relative;
 }
 main #request-box {
   width: 72rem;
@@ -44,14 +45,14 @@ main #request-box #req-firstrow {
   margin-left: 3rem;
   margin-right: 3rem;
 }
-main #request-box #req-firstrow .col {
+main #request-box #req-firstrow .req-box-icon {
   color: rgba(87, 86, 86, 0.795);
 }
-main #request-box #req-firstrow .col h1 svg {
+main #request-box #req-firstrow .req-box-icon h1 svg {
   height: 25px;
   width: 25px;
 }
-main #request-box #req-firstrow .col span {
+main #request-box #req-firstrow .req-box-icon span {
   font-weight: bold;
 }
 main #request-box #req-secondrow {
@@ -109,65 +110,63 @@ main #request-box #req-secondrow #ticket-select #pass-btn button {
   height: 2.5rem;
 }
 main #Questions {
-  width: 72rem;
-  margin-left: auto;
-  margin-right: auto;
   direction: rtl;
 }
 main #Questions #qtitr {
-  margin: 30px 0px 10px 30px;
+  margin: 2rem 0px 10px 2rem;
   font-weight: bold;
 }
 main #Questions button {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
-main #Questions button p {
-  font-size: 1rem;
-  font-weight: bolder;
-  text-align: right;
-  width: 47rem;
-  margin-left: 20rem;
-}
-main #Questions button p svg {
-  width: 30px;
-  height: 30px;
+main #Questions button svg {
+  width: 2rem;
+  height: 2rem;
   color: rgb(205, 255, 255);
   background-color: rgba(0, 0, 255, 0.89);
   border-radius: 50%;
   margin-left: 20px;
 }
+main #Questions button p {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: right;
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
 main #Questions .accordion-body {
   padding: 20px 4rem;
   font-size: 1rem;
 }
-main #other-services {
-  margin: 30px 6rem 3px 0px;
-  direction: rtl;
-}
 main #other-ser {
-  margin: 20px 5.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main #other-ser #other-services {
+  direction: rtl;
 }
 main #other-ser .o-ser {
-  width: 23rem;
   border: 1px rgb(226, 226, 226) solid;
   direction: rtl;
-  padding: 15px;
 }
 main #other-ser .o-ser .ser-link {
   text-decoration: none;
   color: black;
   width: 100%;
+  display: inline-block;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 main #other-ser .o-ser .ser-link img {
   margin-left: 10px;
 }
 main #other-ser .o-ser .ser-link span {
   display: inline-block;
-  width: 6rem;
+  width: 75%;
 }
 main #other-ser .o-ser .ser-link svg {
-  margin-right: 10rem;
   color: rgb(160, 160, 160);
 }
 main .main-paper {
@@ -178,6 +177,8 @@ main .main-paper {
 main .main-paper #travel {
   float: left;
   margin: 0 30px 0 0;
+  max-width: 100%;
+  height: auto;
 }
 main .main-paper p {
   line-height: 30px;
@@ -188,24 +189,21 @@ main .main-paper p a {
 }
 
 footer #footer1 {
-  margin: 30px 60px;
+  direction: rtl;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 footer #footer1 .footer1 {
-  direction: rtl;
-}
-footer #footer1 .footer1 img {
-  float: right;
-  margin-left: 20px;
+  width: 20rem;
 }
 footer #footer1 .footer1 p {
   color: rgb(100, 100, 100);
   line-height: 18px;
+  text-align: right;
+  font-size: 0.9rem;
 }
 footer #footer2 {
-  margin: 30px 80px;
-}
-footer #footer3 {
-  margin-left: 75px;
+  margin: 30px 0px;
 }
 footer #footer3 div a {
   text-decoration: none;
@@ -221,6 +219,92 @@ footer #footer4 div a svg {
   width: 24px;
   height: 24px;
   color: rgb(105, 104, 104);
+}
+
+#tour-page {
+  background-color: whitesmoke;
+}
+#tour-page #tour-group-img {
+  height: auto;
+  width: 100%;
+}
+#tour-page #tour-page-top {
+  box-shadow: 0 5px 5px 0 rgb(243, 243, 243);
+  background-color: white;
+}
+#tour-page #tour-page-top #tour-page-titr {
+  text-align: center;
+  padding: 5px 0px;
+  line-height: 50px;
+}
+#tour-page #tour-page-top #tour-page-titr p {
+  color: #929292;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#tour-page .alibab-tours {
+  text-align: center;
+  direction: rtl;
+}
+#tour-page .alibab-tours .tour-cards .card {
+  width: 17.5rem;
+  height: 21rem;
+  padding: 0px;
+}
+#tour-page .alibab-tours .tour-cards .card img {
+  display: inline-block;
+  height: 10rem;
+}
+#tour-page .alibab-tours .tour-cards .card a {
+  text-decoration: none;
+  color: black;
+}
+#tour-page .alibab-tours .tour-cards .card a .card-body {
+  text-align: right;
+}
+#tour-page .alibab-tours .tour-cards .card a .card-body h5 {
+  letter-spacing: 0px;
+}
+#tour-page .alibab-tours .tour-cards .card a .card-body p .price {
+  color: blue;
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-weight: bolder;
+  font-size: large;
+}
+#tour-page .alibab-tours .tour-cards .card a .card-body p .dot {
+  font-weight: bolder;
+  font-size: large;
+}
+
+#login-body {
+  background-color: whitesmoke;
+}
+#login-body #login-container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+#login-body #login-container #login-box {
+  direction: rtl;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(255, 237, 203);
+}
+#login-body #login-container #login-box #login-pic {
+  text-align: center;
+  direction: rtl;
+}
+#login-body #login-container #login-box #login-pic img {
+  width: 100%;
+  height: auto;
+}
+#login-body #login-container #login-box #login-form {
+  padding: 40px 10px 5px;
+}
+#login-body #login-container #login-box #login-form #login-btn {
+  background-color: orange;
+  border: 1px solid orange;
 }
 
 /*# sourceMappingURL=style.css.map */

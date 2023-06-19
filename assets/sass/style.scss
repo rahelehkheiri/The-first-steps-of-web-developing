@@ -50,6 +50,7 @@ main {
             height: auto;
             margin-top: 10px;
             display: inline-block;
+            position: relative;
         }
     }
     #request-box {
@@ -59,7 +60,7 @@ main {
             margin-left: 3rem;
             margin-right: 3rem;
 
-            .col {
+            .req-box-icon {
                 color: rgba(87, 86, 86, 0.795);
 
                 h1 {
@@ -150,35 +151,31 @@ main {
 
 
     #Questions {
-        width: $box-width;
-        margin-left: auto;
-        margin-right: auto;
         direction: rtl;
 
         #qtitr {
-            margin: 30px 0px 10px 30px;
+            margin: 2rem 0px 10px 2rem;
             font-weight: bold;
         }
 
         button {
-            padding-bottom: 5px;
+            padding-bottom: 20px;
             padding-top: 20px;
-
+            svg {
+                width: 2rem;
+                height: 2rem;
+                color: rgb(205, 255, 255);
+                background-color: rgba(0, 0, 255, 0.89);
+                border-radius: 50%;
+                margin-left: 20px;
+            }
             p {
                 font-size: 1rem;
                 font-weight: bolder;
                 text-align: right;
-                width: 47rem;
-                margin-left: 20rem;
-
-                svg {
-                    width: 30px;
-                    height: 30px;
-                    color: rgb(205, 255, 255);
-                    background-color: rgba(0, 0, 255, 0.89);
-                    border-radius: 50%;
-                    margin-left: 20px;
-                }
+                width: 90%;
+                margin-left: 20px;
+                margin-bottom: 0px;
             }
         }
 
@@ -187,30 +184,30 @@ main {
             font-size: 1rem;
         }
     }
-    #other-services{
-        margin: 30px 6rem 3px 0px;
-        direction: rtl;
-    }
     #other-ser{
-        margin: 20px 5.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        #other-services{
+            direction: rtl;
+        }
         .o-ser{
-            width: 23rem;
             border: 1px rgb(226, 226, 226) solid;
             direction: rtl;
-            padding: 15px;
             .ser-link{
                 text-decoration: none;
                 color: black;
                 width: 100%;
+                display: inline-block;
+                padding-top: .8rem;
+                padding-bottom: .8rem;
                 img{
                     margin-left: 10px;
                 }
                 span{
                     display: inline-block;
-                    width: 6rem;
+                    width: 75%;
                 }
                 svg{
-                    margin-right: 10rem;
                     color: rgb(160, 160, 160);
                 }
             }
@@ -225,6 +222,8 @@ main {
         #travel {
             float: left;
             margin: 0 30px 0 0;
+            max-width: 100%;
+            height: auto;
         }
 
         p {
@@ -240,29 +239,27 @@ main {
 
 footer {
     #footer1 {
-        margin: 30px 60px;
+        direction: rtl;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
         .footer1 {
-            direction: rtl;
-
-            img {
-                float: right;
-                margin-left: 20px;
-            }
+            width: 20rem;
 
             p {
                 color: rgb(100, 100, 100);
                 line-height: 18px;
+                text-align: right;
+                font-size: .9rem;
             }
         }
     }
 
     #footer2 {
-        margin: 30px 80px;
+        margin: 30px 0px;
     }
 
     #footer3 {
-        margin-left: 75px;
 
         div {
             a {
@@ -287,4 +284,103 @@ footer {
             }
         }
     }
+}
+
+// group-tour-page:
+#tour-page{
+    background-color: whitesmoke;
+    #tour-group-img{
+        height: auto;
+        width: 100%;
+    }
+    #tour-page-top{
+        box-shadow: 0 5px 5px 0 rgb(243, 243, 243);
+        background-color: white;
+        #tour-page-titr{
+            text-align: center;
+            padding: 5px 0px;
+            line-height: 50px;
+            p{
+                color: #929292;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .alibab-tours{
+        text-align: center;
+        direction: rtl;
+        // .cards.titr{
+        //     padding-top: 50px;
+        //     padding-bottom: 20px;
+        //     // margin-top: 25px;
+        //     // margin-bottom: 25px;
+        // }
+        .tour-cards{
+            .card{
+                width: 17.5rem;
+                height: 21rem;
+                padding: 0px;
+                img{
+                    display: inline-block;
+                    height: 10rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    .card-body{
+                        text-align: right;
+                        h5{
+                            letter-spacing: 0px;
+                        }
+                        p{
+                            .price{
+                                color: blue;
+                                display: inline-block;
+                                margin-right: 1.5rem;
+                                font-weight: bolder;
+                                font-size: large;
+                            }
+                            .dot{
+                                font-weight: bolder;
+                                font-size: large;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// login-page
+#login-body{
+    background-color: whitesmoke;
+    #login-container{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        #login-box{
+            direction: rtl;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgb(255, 237, 203);
+            #login-pic{
+                text-align: center;
+                direction: rtl;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            #login-form{
+                padding: 40px 10px 5px ;
+                #login-btn{
+                    background-color: orange;
+                    border: 1px solid orange;
+                }
+            }
+
+        }
+    } 
 }

@@ -11,7 +11,7 @@ let cityChange = document.getElementById('city-change');
 function myFunction(x) {
     if (x.matches) {
         navbar.innerHTML = `
-    <nav class="navbar bg-body-tertiary sticky-top" style="direction: rtl;">
+    <nav class="navbar bg-body-tertiary sticky-top" style="direction: rtl; color: orange;">
      <div class="container-fluid">
        <a class="navbar-brand mx-auto" href="#">
         <img src="./assets/pictures/Capture.PNG" alt="">
@@ -107,10 +107,12 @@ function myFunction(x) {
 
 var z = window.matchMedia("(max-width: 760px)")
 var x = window.matchMedia("(max-width: 960px)")
-x.addListener(myFunction)
+x.addEventListener('change',myFunction)
 myFunction('navbar')
-z.addListener(myFunction)
+z.addEventListener('change',myFunction)
 myFunction('navbar')
+
+
 
 loginExit.addEventListener('click', () => {
     loginModal.display('none')
