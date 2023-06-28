@@ -38,9 +38,6 @@ main #airplane img {
   display: inline-block;
   position: relative;
 }
-main #request-box {
-  width: 72rem;
-}
 main #request-box #req-firstrow {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -209,11 +206,9 @@ footer #footer3 div a {
   text-decoration: none;
   color: black;
 }
-footer #footer4 {
-  margin-left: 85px;
-}
-footer #footer4 div {
-  margin: 15px 20px;
+footer #footer3 div a img {
+  width: 4rem;
+  height: 4rem;
 }
 footer #footer4 div a svg {
   width: 24px;
@@ -243,8 +238,14 @@ footer #footer4 div a svg {
   font-size: 1.2rem;
 }
 #tour-page .alibab-tours {
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-align: center;
   direction: rtl;
+}
+#tour-page .alibab-tours .cards.titr {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 #tour-page .alibab-tours .tour-cards .card {
   width: 17.5rem;
@@ -262,6 +263,10 @@ footer #footer4 div a svg {
 #tour-page .alibab-tours .tour-cards .card a .card-body {
   text-align: right;
 }
+#tour-page .alibab-tours .tour-cards .card a .card-body .card-text {
+  display: inline-block;
+  height: 2rem;
+}
 #tour-page .alibab-tours .tour-cards .card a .card-body h5 {
   letter-spacing: 0px;
 }
@@ -276,12 +281,72 @@ footer #footer4 div a svg {
   font-weight: bolder;
   font-size: large;
 }
+#tour-page .tour-sm-md-style {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  direction: rtl;
+}
+#tour-page .tour-sm-md-style .cards.titr {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#tour-page .tour-sm-md-style .tour-cards .card {
+  padding: 0px;
+}
+#tour-page .tour-sm-md-style .tour-cards .card img {
+  display: inline-block;
+  height: 10rem;
+}
+#tour-page .tour-sm-md-style .tour-cards .card a {
+  text-decoration: none;
+  color: black;
+}
+#tour-page .tour-sm-md-style .tour-cards .card a .card-body {
+  text-align: right;
+}
+#tour-page .tour-sm-md-style .tour-cards .card a .card-body .card-text {
+  display: inline-block;
+  height: 2rem;
+}
+#tour-page .tour-sm-md-style .tour-cards .card a .card-body h5 {
+  letter-spacing: 0px;
+}
+#tour-page .tour-sm-md-style .tour-cards .card a .card-body p .price {
+  color: blue;
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-weight: bolder;
+  font-size: large;
+}
+#tour-page .tour-sm-md-style .tour-cards .card a .card-body p .dot {
+  font-weight: bolder;
+  font-size: large;
+}
 
 #login-body {
+  margin-top: 0;
   background-color: whitesmoke;
 }
-#login-body #login-container {
+#login-body #login-topest {
+  position: relative;
+  background-color: rgb(255, 195, 84);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#login-body #login-topest #login-top {
+  box-shadow: 0 5px 5px 0 rgb(243, 243, 243);
+  background-color: white;
   padding-top: 30px;
+  padding-bottom: 30px;
+  padding: 20px 0px;
+}
+#login-body #login-topest #login-top #login-page-titr {
+  text-align: center;
+  color: rgb(63, 63, 63);
+}
+#login-body #login-container {
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 #login-body #login-container #login-box {
@@ -289,7 +354,7 @@ footer #footer4 div a svg {
   background-color: white;
   border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgb(255, 237, 203);
+  box-shadow: 5px 5px 10px rgb(255, 234, 195);
 }
 #login-body #login-container #login-box #login-pic {
   text-align: center;
