@@ -372,4 +372,12 @@ footer #footer4 div a svg {
   border: 1px solid orange;
 }
 
+#tour-page-top {
+  direction: rtl;
+}
+
+#tour-plan {
+  direction: rtl;
+}
+
 /*# sourceMappingURL=style.css.map */
