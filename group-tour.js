@@ -12,9 +12,9 @@ let europeTour = document.getElementById('europe-tour');
 
 
 
-function navFunction(x){
-  if (x.matches) {
-    navbar.innerHTML = `
+function navFunction(x) {
+    if (x.matches) {
+        navbar.innerHTML = `
     <div class="container-fluid navbar bg-body-tertiary sticky-top" style="direction: rtl; color: orange;">
        <a class="navbar-brand mx-auto" href="#">
         <img src="./assets/pictures/Capture.PNG" alt="">
@@ -104,12 +104,12 @@ function navFunction(x){
          </div>
        </div>
      </div>`
-  }
+    }
 }
 
-function domesticTourFunction(x){
-  if(x.matches) {
-    domesticTour.innerHTML = `
+function domesticTourFunction(x) {
+    if (x.matches) {
+        domesticTour.innerHTML = `
     <div class="container tour-sm-md-style" style="direction: rtl;">
         <div class="row cards-titr">
             <div class="col-12">
@@ -298,12 +298,12 @@ function domesticTourFunction(x){
     });
     <script/>
     `
-  }
+    }
 }
 
-function foreignTourFunction(x){
-  if(x.matches){
-    foreignTour.innerHTML= `
+function foreignTourFunction(x) {
+    if (x.matches) {
+        foreignTour.innerHTML = `
     <div class="container tour-sm-md-style" style="direction: rtl;">
         <div class="row cards-titr">
             <div class="col-12">
@@ -468,12 +468,12 @@ function foreignTourFunction(x){
         </div>
     </div>
     `
-  }
+    }
 }
 
-function europeTourFunction(x){
-  if(x.matches){
-    europeTour.innerHTML= `
+function europeTourFunction(x) {
+    if (x.matches) {
+        europeTour.innerHTML = `
     <div class="container tour-sm-md-style" style="direction: rtl;">
         <div class="row cards-titr">
             <div class="col-12">
@@ -525,14 +525,14 @@ function europeTourFunction(x){
         </div>
     </div>
     `
-  }
+    }
 }
 
 function footerDis(b) {
-    if(b.matches){
-      footer3.style.display = 'none'
+    if (b.matches) {
+        footer3.style.display = 'none'
     }
-  }
+}
 
 x.addEventListener('change', navFunction)
 navFunction('navbar')
@@ -559,23 +559,23 @@ footerDis('footer3')
 
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
+    // Optional parameters
+    // direction: 'vertical',
+    // loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
